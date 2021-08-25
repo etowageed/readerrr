@@ -8,21 +8,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="container" class="w-full min-h-screen bg-gray-50">
-    <div class="w-full h-72 pt-10 mb-72" style="background: url(img/pattern1-bg.png); background-repeat: no-repeat; background-size: cover;">
-        <h1 class="text-center text-4xl font-bold font-sans text-white pb-6">readerrr</h1><br>
-        <span class="align-center text-center text-white">Save now, read later</span><br>
-        <div id="wrapperLink" class="max-w-sm md:max-w-4xl rounded-lg shadow-xl h-72 bg-white mx-auto"></div>
-        <button class="py-4 px-6 mx-auto rounded-lg shadow bg-blue-600 hover:bg-blue-900 text-white text-bold text-center">Load</button>
+    <div id="container" class="w-full min-h-screen bg-gray-100">
+    <div class="w-full h-72 pt-10 mb-10" style="background: url(img/pattern1-bg.png); background-repeat: no-repeat; background-size: cover;">
+        <h1 class="text-center text-4xl font-bold font-sans text-white">readerrr</h1>
+        <span class="block align-center text-center text-white">Save now, read later</span>
+        <div class="max-w-xs h-20 md:max-w-2xl bg-white rounded-lg pl-4 mx-auto mt-10 overflow-hidden shadow-xl">
+            <form>
+                <input class="py-6 md:max-w-md focus:outline-none" id="addLink" type="text" placeholder="Paste or type a link to an article to save">
+                <button class="py-9  px-8 bg-blue-900 float-right rounded-tr-lg rounded-br-lg" id="cta"><img src="img/icon-arrow.svg"></button>
+            </form> 
+        </div>
+    
     </div>
 
     
-    <div class="max-w-xs h-20 md:max-w-2xl bg-white rounded-lg pl-4 mx-auto mt-10 overflow-hidden shadow-xl">
-        <form>
-            <input class="py-6 focus:outline-none" id="addLink" type="text" placeholder="Paste or type a link to an article to save">
-            <button class="py-9  px-8 bg-blue-900 float-right rounded-tr-lg rounded-br-lg" id="cta"><img src="img/icon-arrow.svg"></button>
-        </form> 
-    </div>
+    <div id="wrapperLink" class="max-w-sm md:max-w-4xl rounded-lg shadow-xl h-72 bg-white mx-auto"></div>
+        <button class="mx-auto mt-16 py-4 px-8 block rounded-lg shadow bg-blue-600 hover:bg-blue-900 text-white text-bold text-center">Load</button>
+       
+    
+    
+    
 
     </div>
     <script type="text/javascript" src="app.js"></script>
